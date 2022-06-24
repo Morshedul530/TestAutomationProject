@@ -23,10 +23,13 @@ class CreateAccountTest(unittest.TestCase):
         signin.signin_page()
 
         signup = SignUp(driver)
-        signup.signup_page("mshuvo530@gmail.com")
+        signup.signup_page("shuvo4845@gmail.com")
 
         cap = CreateAccountPage(driver)
-        cap.create_account("Morshedul", "Islam", "01746604763", "BITM", "Mirpur-12", "Dhaka", "12345",
+        cap.create_account("Mr.", "Shuvo", "01746604763", "BITM", "Mirpur-12", "Dhaka", "12345",
                           "All information is valid", "01571231339", "01746604763", "Dinajpur")
+
+        # Screenshot
+        driver.save_screenshot("D:\\Project\Assignment\\TestAutomationProject\\screenshot\\Create_New_Account.png")
 
         driver.close()

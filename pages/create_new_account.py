@@ -7,7 +7,7 @@ class CreateAccountPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def create_account(self, firstname, lastname, password, company, Address, city, zip, addInfo, HPhone, Mphone,
+    def create_account(self, firstname, lastname, password, company, Address, city, zip, addInfo, homephone, mobilephone,
                        refaddress):
 
         # Select Title
@@ -66,10 +66,10 @@ class CreateAccountPage:
         additional_info.send_keys(addInfo)
 
         home_phone = self.driver.find_element(By.ID, 'phone')
-        home_phone.send_keys(HPhone)
+        home_phone.send_keys(homephone)
 
         mobile_phone = self.driver.find_element(By.ID, 'phone_mobile')
-        mobile_phone.send_keys(Mphone)
+        mobile_phone.send_keys(mobilephone)
 
         alias = self.driver.find_element(By.ID, 'alias')
         alias.send_keys(refaddress)

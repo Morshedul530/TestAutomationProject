@@ -29,4 +29,7 @@ class Dress_SelectionTest(unittest.TestCase):
 
         dsp = DressSelectionPage(driver)
         dsp.dress_selection()
-        time.sleep(3)
+        time.sleep(5)
+
+        # Screenshot
+        driver.save_screenshot("D:\\Project\Assignment\\TestAutomationProject\\screenshot\\Casual_dress_selection.png")

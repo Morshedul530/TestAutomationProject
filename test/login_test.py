@@ -25,6 +25,9 @@ class Login_test(unittest.TestCase):
 
         lp = LoginPage(driver)
         lp.login_page("mshuvo530@gmail.com", "01746604763")
-        time.sleep(3)
+        time.sleep(5)
+
+        # Screenshot
+        driver.save_screenshot("D:\\Project\Assignment\\TestAutomationProject\\screenshot\\Login_test.png")
 
         driver.close()

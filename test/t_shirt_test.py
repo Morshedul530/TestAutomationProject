@@ -31,8 +31,16 @@ class Tshirt_SelectionTest(unittest.TestCase):
 
         tsp = TShirtPage(driver)
         tsp.t_shirt_page()
-        time.sleep(3)
+        time.sleep(5)
+
+        # Screenshot
+        driver.save_screenshot("D:\\Project\Assignment\\TestAutomationProject\\screenshot\\T-shirt_selection.png")
 
         ppp = PaymentProcessPage(driver)
         ppp.payment_process()
         time.sleep(3)
+
+        # Screenshot
+        driver.save_screenshot("D:\\Project\Assignment\\TestAutomationProject\\screenshot\\Sign_out.png")
+
+
